@@ -1,3 +1,3 @@
 module tb();
-#5;
+#10;
 endmodule
