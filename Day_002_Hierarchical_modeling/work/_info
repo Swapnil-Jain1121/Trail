@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Repository/Verilog/Day_002_Hierarchical_modeling
+vfull_adder
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 87Soe5N8=@aTzX88GcGgT1
+II1Af2^fkfU;2a9XO=2AKd3
+R0
+w1687107056
+8FA_Using_HA.v
+FFA_Using_HA.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1687107060.000000
+Z4 !s107 FA_Using_HA.v|tb_FA_Using_HA.v|
+Z5 !s90 -reportprogress|300|tb_FA_Using_HA.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vhalf_adder
+R1
+r1
+!s85 0
+!i10b 1
+!s100 @=`Yi4S0:_a6PiBC5^Q6W1
+IY4U2HMGg]?Fc@C^Z76DM`2
+R0
+w1687104156
+8Half_Adder.v
+FHalf_Adder.v
+L0 1
+R2
+31
+Z8 !s108 1687105005.000000
+Z9 !s107 Half_Adder.v|tb_Half_Adder.v|
+Z10 !s90 -reportprogress|300|tb_Half_Adder.v|
+!i113 0
+R6
+R7
+vtb_full_adder
+R1
+r1
+!s85 0
+!i10b 1
+!s100 <3]aJgB_hhD[7KRgXBlMT2
+IeT]l^lN7ga2OaDF5YN<:X1
+R0
+w1687106975
+8tb_FA_Using_HA.v
+Ftb_FA_Using_HA.v
+L0 2
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vtb_half_adder
+R1
+r1
+!s85 0
+!i10b 1
+!s100 0h8h2A;K?]gPb9XLROPbP1
+I9[mX_a2Jj8cD0T5<feI4O3
+R0
+w1687105003
+8tb_Half_Adder.v
+Ftb_Half_Adder.v
+L0 2
+R2
+31
+R8
+R9
+R10
+!i113 0
+R6
+R7

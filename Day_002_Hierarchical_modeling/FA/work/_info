@@ -1,0 +1,137 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Repository/Verilog/Day_002_Hierarchical_modeling/FA
+vFA_1bit
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 Ae`]E4BP1QYmbANLL<Q=51
+Inek7zZh6lB=4X_K[TSiOB3
+R0
+w1687164905
+81_FA_1bit.v
+F1_FA_1bit.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1687182403.000000
+Z4 !s107 1_FA_1bit.v|4_FA_nbit_genvar.v|4_tb_FA_4bit.v|
+Z5 !s90 -reportprogress|300|4_tb_FA_4bit.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+n@f@a_1bit
+vFA_4bit
+!s110 1687165129
+!i10b 1
+!s100 T<Y2MEfgNfMAjmALBaoh51
+IPPQ7[P@fa?O[^a6]>GGXC2
+R1
+R0
+w1687163926
+8FA_4bit.v
+FFA_4bit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1687165129.000000
+!s107 FA_4bit.v|tb_FA_4bit_Using_1bit_FA.v|
+!s90 -reportprogress|300|tb_FA_4bit_Using_1bit_FA.v|
+!i113 0
+R6
+R7
+n@f@a_4bit
+vFA_4bit_Using_1bit_FA
+R1
+r1
+!s85 0
+!i10b 1
+!s100 =6n6IQYV?L@85OWiz:P_B0
+I7c5a^K]j7XX3DYCPGYR700
+R0
+w1687164929
+8FA_4bit_Using_1bit_FA.v
+FFA_4bit_Using_1bit_FA.v
+L0 2
+R2
+31
+!s108 1687164935.000000
+!s107 FA_1bit.v|FA_4bit_Using_1bit_FA.v|
+!s90 -reportprogress|300|FA_4bit_Using_1bit_FA.v|
+!i113 0
+R6
+R7
+n@f@a_4bit_@using_1bit_@f@a
+vFA_nbit_Using_1bit_FA
+R1
+r1
+!s85 0
+!i10b 1
+!s100 V4z>GR0?V6@G^?]3JgdN43
+I;4n2IokXNK3OH51olCRle1
+R0
+w1687182381
+84_FA_nbit_genvar.v
+F4_FA_nbit_genvar.v
+L0 3
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+n@f@a_nbit_@using_1bit_@f@a
+vtb_FA_4bit
+R1
+r1
+!s85 0
+!i10b 1
+!s100 GG<RkDUnZKfj3BE=;;>lo3
+IXSb`[NW6ed7dAB[`j?jn:3
+R0
+w1687182132
+84_tb_FA_4bit.v
+F4_tb_FA_4bit.v
+L0 3
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
+ntb_@f@a_4bit
+vtb_FA_4bit_Using_1bit_FA
+R1
+r1
+!s85 0
+!i10b 1
+!s100 5oa@7_LfQQVzIG>gcH`0o1
+IGKFNllS[Q6TACljcE:SPm3
+R0
+w1687166224
+84_FA_4bit_hier.v
+F4_FA_4bit_hier.v
+L0 2
+R2
+31
+!s108 1687166355.000000
+!s107 1_FA_1bit.v|4_FA_4bit_hier.v|
+!s90 -reportprogress|300|4_FA_4bit_hier.v|
+!i113 0
+R6
+R7
+ntb_@f@a_4bit_@using_1bit_@f@a
