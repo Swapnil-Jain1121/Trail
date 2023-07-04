@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Repository/Verilog/FSM
+vpattern_det
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 MgcN1TK8<do[bO@o>O^Ln2
+I^RGdWLQJ6Go?[NYS@0fM03
+R0
+w1688500459
+8pattern_det_mealy.v
+Fpattern_det_mealy.v
+L0 4
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1688500461.000000
+Z4 !s107 pattern_det_mealy.v|tb_pattern_det.v|
+Z5 !s90 -reportprogress|300|tb_pattern_det.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 :iogWRPmj2FgI]A^SgSe?2
+IOUlK^YPA>VNFg5UfeBUU51
+R0
+w1688500434
+8tb_pattern_det.v
+Ftb_pattern_det.v
+L0 4
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7
