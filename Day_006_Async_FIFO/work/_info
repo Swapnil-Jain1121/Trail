@@ -16,13 +16,13 @@ r1
 !s100 `??Aoz?YNJQMk5>FiJn4[0
 IoY2`OO:gNmXom_0Ucb9`J1
 Z1 dE:/Repository/Verilog/Day_006_Async_FIFO
-w1690026582
+w1690035583
 8Async_FIFO.v
 FAsync_FIFO.v
 L0 1
 Z2 OL;L;10.7c;67
 31
-Z3 !s108 1690027727.000000
+Z3 !s108 1690035739.000000
 Z4 !s107 Async_FIFO.v|tb_Async_FIFO.v|
 Z5 !s90 -reportprogress|300|tb_Async_FIFO.v|
 !i113 0
@@ -34,13 +34,13 @@ R0
 r1
 !s85 0
 !i10b 1
-!s100 LLebd1RVf?X5j6Zd]<]Z`0
-ISjO:U5V0jzakeMVSkaR2@0
+!s100 G0XoifiC5:I2N[CXjgbR52
+IjdHzD?QVzR]9>QhG4BZHO2
 R1
-w1690027660
+w1690035737
 8tb_Async_FIFO.v
 Ftb_Async_FIFO.v
-L0 2
+L0 4
 R2
 31
 R3

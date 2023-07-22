@@ -1,4 +1,6 @@
 `include"Async_FIFO.v"
+// `include"Async_FIFO_gray.v"
+
 module tb_Async_FIFO();
     
     parameter DEPTH     = 16, WIDTH     = 8, PTR_WIDTH     = 4;
@@ -21,7 +23,8 @@ module tb_Async_FIFO();
     wire empty_o;
     wire rd_error_o;
     
-    integer i;
+    integer q,i,j,k;
+    integer wr_delay, rd_delay;
     
     reg [30*8:1] test_name;
     
@@ -42,7 +45,7 @@ module tb_Async_FIFO();
     //apply rst and stimulus
     initial begin
         $value$plusargs("test_name=%s",test_name);
-        rst_i = 1; //applying
+        rst_i   = 1; //applying
         //when applying rst make all inputs to zero
         wr_en_i = 0;
         rd_en_i = 0;
@@ -54,10 +57,10 @@ module tb_Async_FIFO();
         
         //apply stimulus
         //testcases
-
+        
         // write_fifo(DEPTH/2);
         // read_fifo(DEPTH/2);
-
+        
         case (test_name)
             "test_full" : begin
                 write_fifo(DEPTH);
@@ -73,8 +76,25 @@ module tb_Async_FIFO();
                 write_fifo(DEPTH);
                 read_fifo(DEPTH + 1);
             end
-            // "test_concurrent_wr_rd" : begin
-            // end
+            "test_concurrent_wr_rd" : begin
+                fork
+                begin
+                    for(j = 0; j<10; j = j+1) begin
+                        write_fifo(1);
+                        wr_delay = $urandom_range(1,10);
+                        repeat(wr_delay) @(posedge wr_clk_i);
+                    end
+                end
+                begin
+                    for(k = 0; k<10; k = k+1) begin
+                        read_fifo(1);
+                        rd_delay = $urandom_range(1,10);
+                        repeat(wr_delay) @(posedge rd_clk_i);
+                    end
+                end
+                join
+                
+            end
         endcase
         #50;
         $finish;
@@ -95,7 +115,7 @@ module tb_Async_FIFO();
     
     task read_fifo(input integer num_rd);
         begin
-            for(i = 0; i<num_rd; i = i + 1) begin
+            for(q = 0; q<num_rd; q = q + 1) begin
                 @(posedge rd_clk_i);
                 rd_en_i = 1;
             end

@@ -37,8 +37,14 @@ module Async_FIFO(wr_clk_i,
     reg [PTR_WIDTH-1:0] wr_ptr;
     reg [PTR_WIDTH-1:0] rd_ptr;
     
+    reg [PTR_WIDTH-1:0] wr_ptr_gray;
+    reg [PTR_WIDTH-1:0] rd_ptr_gray;
+    
     reg [PTR_WIDTH-1:0] wr_ptr_rd_clk;
     reg [PTR_WIDTH-1:0] rd_ptr_wr_clk;
+    
+    reg [PTR_WIDTH-1:0] wr_ptr_gray_rd_clk;
+    reg [PTR_WIDTH-1:0] rd_ptr_gray_wr_clk;
     
     reg wr_toggle_f;
     reg rd_toggle_f;
@@ -57,6 +63,8 @@ module Async_FIFO(wr_clk_i,
             rdata_o            = 0;
             wr_ptr             = 0;
             rd_ptr             = 0;
+            wr_ptr_gray        = 0;
+            rd_ptr_gray        = 0;
             wr_ptr_rd_clk      = 0;
             rd_ptr_wr_clk      = 0;
             wr_toggle_f        = 0;
@@ -81,7 +89,9 @@ module Async_FIFO(wr_clk_i,
                     if (wr_ptr == DEPTH-1) begin
                         wr_toggle_f = ~wr_toggle_f;
                     end
-                    wr_ptr = wr_ptr + 1;
+                    wr_ptr      = wr_ptr + 1;
+                    wr_ptr_gray = {wr_ptr[3],wr_ptr[3:1] ^ wr_ptr[2:0]};
+                    //MSB bit, remaining bit XOR in one bit shifted manner
                 end
             end
             
@@ -106,7 +116,9 @@ module Async_FIFO(wr_clk_i,
                     if (rd_ptr == DEPTH-1) begin
                         rd_toggle_f = ~rd_toggle_f;
                     end
-                    rd_ptr = rd_ptr + 1;
+                    rd_ptr      = rd_ptr + 1;
+                    rd_ptr_gray = {rd_ptr[3],rd_ptr[3:1]^rd_ptr[2:0]};
+                    
                 end
             end
         end
@@ -121,11 +133,11 @@ module Async_FIFO(wr_clk_i,
         full_o  = 0;
         
         //generating full condition
-        if (wr_ptr == rd_ptr_wr_clk) begin
+        if (wr_ptr_gray == rd_ptr_gray_wr_clk) begin
             if (wr_toggle_f != rd_toggle_f_wr_clk) full_o = 1;
         end
         //generating empty condition
-        if (wr_ptr_rd_clk == rd_ptr) begin
+        if (wr_ptr_gray_rd_clk == rd_ptr_gray) begin
             if (wr_toggle_f_rd_clk == rd_toggle_f) empty_o = 1;
         end
         
@@ -136,13 +148,13 @@ module Async_FIFO(wr_clk_i,
     
     //synchronising wr_ptr w.r.to. rd_clk_i
     always @(posedge rd_clk_i) begin
-        wr_ptr_rd_clk      <= wr_ptr;
+        wr_ptr_gray_rd_clk <= wr_ptr_gray;
         wr_toggle_f_rd_clk <= wr_toggle_f;
     end
     
     //synchronising rd_ptr w.r.to. wr_clk_i
     always @(posedge wr_clk_i) begin
-        rd_ptr_wr_clk      <= rd_ptr;
+        rd_ptr_gray_wr_clk <= rd_ptr_gray;
         rd_toggle_f_wr_clk <= rd_toggle_f;
     end
     
