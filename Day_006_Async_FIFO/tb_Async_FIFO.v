@@ -51,6 +51,7 @@ module tb_Async_FIFO();
         @(posedge wr_clk_i); //holding
         rst_i = 0; //releasing
         
+        
         //apply stimulus
         //testcases
 
