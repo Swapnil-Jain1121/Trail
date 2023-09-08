@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Repository/Verilog/Procedural_statements
+vmux8x1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 :R7MzRnAX>dOA?Ub2QO]D0
+IlbB3Ki3jPegU@:=I^2idD3
+R0
+w1688044209
+81_mux8x1_case.v
+F1_mux8x1_case.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+Z3 !s108 1688044251.000000
+Z4 !s107 1_mux8x1_case.v|1_tb_mux8x1.v|
+Z5 !s90 -reportprogress|300|1_tb_mux8x1.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 5FMJ;[G3CIO`J=2NNAQHR2
+IWGo3SK4P[2FJIZEAkVO=P1
+R0
+w1688051221
+8int_array.v
+Fint_array.v
+L0 1
+R2
+31
+!s108 1688051224.000000
+!s107 int_array.v|
+!s90 -reportprogress|300|int_array.v|
+!i113 0
+R6
+R7
+vtb_mux8x1
+R1
+r1
+!s85 0
+!i10b 1
+!s100 eIeg<La9b;Ngo_ShgA29Z2
+Id;7;:1M4n;:e9ZBJ^:g:`3
+R0
+w1688043555
+81_tb_mux8x1.v
+F1_tb_mux8x1.v
+L0 4
+R2
+31
+R3
+R4
+R5
+!i113 0
+R6
+R7

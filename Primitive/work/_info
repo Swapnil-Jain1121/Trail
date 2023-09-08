@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Repository/Verilog/Primitive
+Umux2x1
+Z1 !s110 1688377357
+!i10b 1
+!s100 N16elhlXS[fZ=?<JH86RY3
+Ik_CM6dbf1cUcWO_TB3Qcc1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1688377353
+8primitive_1.v
+Fprimitive_1.v
+L0 2
+Z3 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z4 !s108 1688377357.000000
+!s107 primitive_1.v|tb_primitive_1.v|
+Z5 !s90 -reportprogress|300|tb_primitive_1.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+!i10b 1
+!s100 >aib:04SBRfgAI;6<TWdY1
+IH59V1YoSAeWPdN_;[YhIG3
+R2
+R0
+w1688377304
+8tb_primitive_1.v
+Ftb_primitive_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+Z8 !s107 primitive_1.v|tb_primitive_1.v|
+R5
+!i113 0
+R6
+R7

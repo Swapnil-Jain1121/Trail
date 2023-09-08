@@ -1,0 +1,91 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Repository/Verilog/Task_and_Functions
+vALU
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 [@Uj:V3^`6ThfL`;X^k;]2
+I]^[J1Xd6^lJAXY6maPABS2
+R0
+w1687440411
+8ALU.v
+FALU.v
+L0 1
+Z2 OL;L;10.7c;67
+31
+!s108 1687440412.000000
+!s107 ALU.v|
+!s90 -reportprogress|300|ALU.v|
+!i113 0
+Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 tCvgOpt 0
+n@a@l@u
+vpractice
+R1
+r1
+!s85 0
+!i10b 1
+!s100 ;o`6b>RLF8^_9CPIdQ``b1
+IL85UICmhL1Kg[a8Kf`8z93
+R0
+w1690470931
+8practice_2.v
+Fpractice_2.v
+L0 1
+R2
+31
+!s108 1690470935.000000
+!s107 practice_2.v|
+!s90 -reportprogress|300|practice_2.v|
+!i113 0
+R3
+R4
+vtb
+R1
+r1
+!s85 0
+!i10b 1
+!s100 e2GGEdiTF0:gmo3B4gX>i3
+I:e;e<E;l3dQfV4MN0OCz[0
+R0
+w1690469363
+8tb_practice.v
+Ftb_practice.v
+L0 1
+R2
+31
+!s108 1690469412.000000
+!s107 tb_practice.v|
+!s90 -reportprogress|300|tb_practice.v|
+!i113 0
+R3
+R4
+vtop
+R1
+r1
+!s85 0
+!i10b 1
+!s100 ]B_9>lc38W:FEZ^I4:^IA3
+IXAXG09^G3Z?[;a98I@STb0
+R0
+w1687445472
+8Automatic_Task_Functions.v
+FAutomatic_Task_Functions.v
+L0 1
+R2
+31
+!s108 1687445477.000000
+!s107 Automatic_Task_Functions.v|
+!s90 -reportprogress|300|Automatic_Task_Functions.v|
+!i113 0
+R3
+R4
